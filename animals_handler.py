@@ -1,13 +1,13 @@
-from attractions.attractions import Wetlands
-from petting import Llama, Goat, Alpaca, Pony, Pig
-from pond import Tadpole, Goldfish, Mallard, Goose, Frog
-from tank import Snake, Turtle, Lizard, Viper, Boa
+from animals import Llama, Goat, Alpaca, Pony, Pig, Tadpole, Goldfish, Mallard, Goose, Frog, Snake, Turtle, Lizard, Viper, Boa
 from attractions import PettingZoo, Wetlands
+
+
 
 
 # fluffy_village = PettingZoo("Fluffy Village")
 # varmint_village = PettingZoo("Varmint Village")
 wet_village = Wetlands("Wet Village")
+print(wet_village.description)
 
 
 ############
