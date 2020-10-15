@@ -1,44 +1,64 @@
 from petting import Llama, Goat, Alpaca, Pony, Pig
 from pond import Tadpole, Goldfish, Mallard, Goose, Frog
 from tank import Snake, Turtle, Lizard, Viper, Boa
+from attractions import PettingZoo
+
+
+fluffy_village = PettingZoo("Fluffy Village")
+varmint_village = PettingZoo("Varmint Village")
+wet_village = PettingZoo("Wet Village")
+
+
+############
 
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "morning", "Llama Chow" )
-# print(miss_fuzz.feed())
 mr_fuzz = Goat("Mister Fuzz", "mountain goat", "morning", "Goat Chow")
-# print(mr_fuzz.feed())
 baby_fuzz = Alpaca("Baby Fuzz", "domestic alpaca", "morning", "Alpaca Chow")
-# print(baby_fuzz.feed())
 fancy_fuzz = Pony("Fancy Fuzz", "miniature horse", "morning", "Pony Chow")
-# print(fancy_fuzz.feed())
 oink_fuzz = Pig("Oink Fuzz", "domestic pig", "morning", "Pig Chow")
-#print(oink_fuzz.feed())
 
+fluffy_village.add_to_list(miss_fuzz)
+fluffy_village.add_to_list(mr_fuzz)
+fluffy_village.add_to_list(baby_fuzz)
+fluffy_village.add_to_list(fancy_fuzz)
+fluffy_village.add_to_list(oink_fuzz)
 
 ##########
 
-
 sneky = Snake("Sneky", "copperhead", "morning", "Snake Chow")
-print(sneky.feed())
 squirt = Turtle("Squirt", "turtle", "morning", "Turtle Chow")
-print(squirt.feed())
 lizzie = Lizard("Lizzie", "lizard", "morning", "Lizard Chow")
-print(lizzie.feed())
 veep = Viper("Veep", "viper", "morning", "Pig Chow")
-print(veep.feed())
 boaz = Boa("Boaz", "boa constrictor", "morning", "Boa Chow")
-print(boaz.feed())
 
+varmint_village.add_to_list(sneky)
+varmint_village.add_to_list(squirt)
+varmint_village.add_to_list(lizzie)
+varmint_village.add_to_list(veep)
+varmint_village.add_to_list(boaz)
 
 ###############
 
 
 thad = Tadpole("Thad", "frog", "morning", "Snake Chow")
-# print(thad.feed())
 nemo = Goldfish("Nemo", "fish", "morning", "Snake Chow")
-# print(nemo.feed())
 mallory = Mallard("Mallory", "duck", "morning", "Snake Chow")
-# print(mallory.feed())
 bonkers = Goose("Bonkers", "goose", "morning", "Snake Chow")
-# print(bonkers.feed())
 froggie = Frog("Froggie", "Frog", "morning", "Snake Chow")
-# print(froggie.feed())
+
+wet_village.add_to_list(thad)
+wet_village.add_to_list(nemo)
+wet_village.add_to_list(mallory)
+wet_village.add_to_list(bonkers)
+wet_village.add_to_list(froggie)
+
+################
+
+for animal in fluffy_village.animals:
+    print(f'You can find {animal.name} the {animal.species} in {fluffy_village.attraction_name}')
+
+for animal in varmint_village.animals:
+    print(f'You can find {animal.name} the {animal.species} in {varmint_village.attraction_name}')
+
+for animal in wet_village.animals:
+    print(f'You can find {animal.name} the {animal.species} in {wet_village.attraction_name}')
