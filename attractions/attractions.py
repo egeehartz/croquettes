@@ -4,6 +4,10 @@ class PettingZoo:
         self.attraction_name = name
         self.description = "cute and fuzzy critters to cuddle"
         self.animals = list()
+    
+    def add_to_list(self, animal):
+        self.animals.append(animal)
+        
 
 class SnakePit:
 
@@ -11,6 +15,9 @@ class SnakePit:
         self.attraction_name = name
         self.description = "slithering snakes so satisfyingly sneaky"
         self.animals = list()
+    
+    def add_to_list(self, animal):
+        self.animals.append(animal)
 
 class Wetlands:
 
@@ -18,4 +25,7 @@ class Wetlands:
         self.attraction_name = name
         self.description = "Stroll by the pond!"
         self.animals = list()
+    
+    def add_to_list(self, animal):
+        self.animals.append(animal)
     
