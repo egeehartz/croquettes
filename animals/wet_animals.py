@@ -1,13 +1,12 @@
 from datetime import date
+from movements import Swimming
+from .animal import Animal
 
-class Tadpole: 
+class Tadpole(Animal, Swimming): 
 
     def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        self.food = food
+        Animal.__init__(self, name, species, food)
+        Swimming.__init__(self)
 
     def feed(self):
       print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')

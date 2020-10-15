@@ -1,5 +1,6 @@
 from animals import Llama, Goat, Alpaca, Pony, Pig, Tadpole, Goldfish, Mallard, Goose, Frog, Snake, Turtle, Lizard, Viper, Boa
-from attractions import PettingZoo, Wetlands
+from attractions import PettingZoo, Wetlands, SnakePit
+
 
 
 
@@ -42,6 +43,7 @@ boaz = Boa("Boaz", "boa constrictor", "morning", "Boa Chow")
 
 
 thad = Tadpole("Thad", "frog", "morning", "Snake Chow")
+print(thad.swim)
 nemo = Goldfish("Nemo", "fish", "morning", "Snake Chow")
 mallory = Mallard("Mallory", "duck", "morning", "Snake Chow")
 bonkers = Goose("Bonkers", "goose", "morning", "Snake Chow")
