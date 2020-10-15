@@ -52,13 +52,14 @@ class Goose:
 
 class Frog: 
 
-    def __init__(self, name, species, shift, food):
+    def __init__(self, name, species, shift, food, chip_num):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
         self.walking = True
         self.food = food
+        self.chip_num = chip_num
 
     def feed(self):
       print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')

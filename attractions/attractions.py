@@ -29,3 +29,7 @@ class Wetlands:
     def add_to_list(self, animal):
         self.animals.append(animal)
     
+    @property
+    def last_critter_added(self):
+        return self.animals[-1]
+    
