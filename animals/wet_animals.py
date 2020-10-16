@@ -11,13 +11,14 @@ class Tadpole(Animal, Swimming):
     def feed(self):
       print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-class Goldfish: 
+class Goldfish(Swimming): 
 
     def __init__(self, name, species, shift, food):
+        super().__init__()
         self.name = name
         self.species = species
         self.date_added = date.today()
-        self.swimming = True
+        # self.swimming = True
         self.food = food
 
     def feed(self):

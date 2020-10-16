@@ -5,10 +5,24 @@ from attractions import PettingZoo, Wetlands, SnakePit
 
 
 
+varmint_village = PettingZoo("The Varmint Village")
+
+# remember, some animals may require more arguments than others; e.g. shift
+dolly = Llama("Dolly", "miniature llama","morning", "hay")
+snappy = Goldfish("Snappy", "American Alligator", "afternoon", "fish")
+
+varmint_village.add_animal_pythonic(dolly)
+varmint_village.add_animal_type_check(dolly)
+varmint_village.add_animal_pythonic(snappy)
+
+
+
+
+
 # fluffy_village = PettingZoo("Fluffy Village")
 # varmint_village = PettingZoo("Varmint Village")
-wet_village = Wetlands("Wet Village")
-print(wet_village.description)
+# wet_village = Wetlands("Wet Village")
+# print(wet_village.description)
 
 
 ############
@@ -42,19 +56,19 @@ boaz = Boa("Boaz", "boa constrictor", "morning", "Boa Chow")
 ###############
 
 
-thad = Tadpole("Thad", "frog", "morning", "Snake Chow")
-print(thad.swim)
-nemo = Goldfish("Nemo", "fish", "morning", "Snake Chow")
-mallory = Mallard("Mallory", "duck", "morning", "Snake Chow")
-bonkers = Goose("Bonkers", "goose", "morning", "Snake Chow")
-froggie = Frog("Froggie", "Frog", "morning", "Snake Chow", 123789)
-print(froggie.chip_num)
+# thad = Tadpole("Thad", "frog", "morning", "Snake Chow")
+# print(thad.swim)
+# nemo = Goldfish("Nemo", "fish", "morning", "Snake Chow")
+# mallory = Mallard("Mallory", "duck", "morning", "Snake Chow")
+# bonkers = Goose("Bonkers", "goose", "morning", "Snake Chow")
+# froggie = Frog("Froggie", "Frog", "morning", "Snake Chow", 123789)
+# print(froggie.chip_num)
 
 
-wet_village.add_to_list(thad)
-wet_village.add_to_list(nemo)
+# wet_village.add_to_list(thad)
+# wet_village.add_to_list(nemo)
 
-print(wet_village.last_critter_added)
+# print(wet_village.last_critter_added)
 # wet_village.add_to_list(mallory)
 # wet_village.add_to_list(bonkers)
 # wet_village.add_to_list(froggie)

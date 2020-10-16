@@ -1,12 +1,14 @@
 from datetime import date
+from movements.walk import Walking
 
-class Llama:
+class Llama(Walking):
 
     def __init__(self, name, species, shift, food):
+        super().__init__()
         self.name = name
         self.species = species
         self.date_added = date.today()
-        self.walking = True
+        #self.walking = True
         self.food = food
 
     def feed(self):
